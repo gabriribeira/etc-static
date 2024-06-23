@@ -4,6 +4,7 @@ import Features from './components/features';
 import Header from './components/header';
 import EndingPage from './components/end';
 import Footer from './components/footer';
+import ScrollToTop from './components/ScrollToTop';  // Importa o componente
 import './index.css';
 
 function App() {
@@ -25,24 +26,13 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div>
       <Header />
-      
-      <div id="endingPage">
-        <EndingPage toggle={toggle} />
-      </div>
-
-      <section id="features">
-        <Features/>
-      </section>
-
-      <section id="about">
-        <AboutSection/>
-      </section>
-
-      <section id="contact">
-        <Footer/>
-      </section>
+      <EndingPage toggle={toggle} />
+      <Features />
+      <AboutSection />
+      <Footer />
+      <ScrollToTop /> 
     </div>
   );
 }

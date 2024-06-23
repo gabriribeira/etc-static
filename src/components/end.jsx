@@ -4,6 +4,7 @@ import '../index.css';
 
 function EndingPage({ toggle }) {
   return (
+    <div id="endingPage">
     <div className="text-center pt-32 bg-white">
       <section className="flex justify-center py-10 md:py-20">
         <div className={`toggle ${toggle ? 'toggle-on' : 'toggle-off'}`}></div>
@@ -12,6 +13,7 @@ function EndingPage({ toggle }) {
         activate your <strong>new household</strong> today!
       </h3>
       <img src={Logo} alt="logo" className="w-full pt-8 opacity-25" />
+    </div>
     </div>
   );
 }

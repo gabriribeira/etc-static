@@ -12,87 +12,87 @@ import sustainableImage2 from '../imgs/sustainabilityscreen.png';
 
 function Features() {
   return (
-    <div id="features" className="bg-salmon text-black pb-32">
+    <section id="features" className="bg-salmon text-black pb-32">
       <div className="container mx-auto px-4">
         <div className="relative">
           <h2 className="text-4xl font-bold">
-            <p className="absolute text-[3rem] lg:text-[8rem] font-bold text-black pt-2">
+            <span className="block text-[3rem] lg:text-[8rem] font-bold text-black pt-2">
               features.
-            </p>
+            </span>
           </h2>
         </div>
       </div>
 
-      <div className="lg:w-[1024px] lg:h-[790px] md:w-[768px] md:w-[768px] lg:pt-12 md:pb-12">
-        <div className="relative top-[141px] lg:left-[300px] md:left-0">
-          <div className="absolute">
-            <div className="flex flex-col w-[450px] items-start gap-[13px] absolute top-[397px] md:pb-32">
-              <div className="lg:relative md:absolute mt-[-1px] font-semibold lg:text-[26px] md:text-[23px]">
-                Collaborative Shopping Lists
-              </div>
-              <p className="lg:relative md:absolute text-black lg:text-[18px] md:text-[15px]">
+      <div className="container mx-auto px-4 lg:pt-12 md:pb-12">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center lg:space-x-8 mt-12 lg:mt-0">
+          <div className="flex flex-col w-full lg:w-1/2 mb-8 lg:mb-0">
+            <div className="mb-4">
+              <h3 className="text-2xl lg:text-3xl font-semibold">Collaborative Shopping Lists</h3>
+              <p className="text-lg lg:text-xl">
                 Add or edit products, making sure nothing stays in the supermarket and fight waste.
               </p>
             </div>
-            <div className="absolute w-[550px] h-[547px] top-0 left-[209px] hidden md:block">
-              <img className="absolute w-[500px] h-auto top-[25px] left-0 object-cover transition-all duration-300 transform hover:scale-105" alt="Element" src={collaborativeImage2} style={{ objectFit: 'contain' }} />
-              <img className="absolute w-[320px] h-auto top-[260px] left-[200px] object-cover transition-all duration-300 transform hover:scale-105" alt="Element" src={collaborativeImage3} style={{ objectFit: 'contain' }} />
-              <img className="absolute w-[300px] h-auto top-0 left-[400px] object-cover transition-all duration-300 transform hover:scale-105" alt="Iphone" src={collaborativeImage4} style={{ objectFit: 'contain' }} />
+            <div className="flex flex-wrap justify-center lg:justify-start space-x-4">
+              <img src={collaborativeImage1} alt="Collaborative 1" className="w-full max-w-xs lg:max-w-sm mb-4 transition-transform duration-300 transform hover:scale-105" />
+              <img src={collaborativeImage2} alt="Collaborative 2" className="w-full max-w-xs lg:max-w-sm mb-4 transition-transform duration-300 transform hover:scale-105" />
+              <img src={collaborativeImage3} alt="Collaborative 3" className="w-full max-w-xs lg:max-w-sm mb-4 transition-transform duration-300 transform hover:scale-105" />
+              <img src={collaborativeImage4} alt="Collaborative 4" className="w-full max-w-xs lg:max-w-sm mb-4 transition-transform duration-300 transform hover:scale-105" />
             </div>
-          </div>
-          <img className="absolute w-[356px] h-auto top-[148px] left-0 object-cover transition-all duration-300 transform hover:scale-105 hidden md:block" alt="Element" src={collaborativeImage1} />
-        </div>
-      </div>
-
-      <div className="lg:w-[1024px] lg:h-[790px] md:w-[768px] md:w-[768px] lg:pt-12 md:pt-2">
-        <div className="lg:relative top-[141px] lg:left-[300px] md:left-0 md:absolute">
-          <div className="inline-flex flex-col items-end gap-[13px] absolute top-[217px] left-[360px]">
-            <div className="lg:relative md:absolute w-fit mt-[-0.53px] font-semibold text-[26px] text-right md:items-start md:left-0">
-              AI-powered shopping lists
-            </div>
-            <p className="lg:relative md:absolute w-[414.38px] font-normal text-[18px] text-right md:items-start md:left-0">
-              Ask AI to automatically generate shopping lists for your favorite recipes or events. Get everything you need in a matter of seconds!
-            </p>
-          </div>
-          <div className="absolute w-[502px] h-[445px] top-0 left-0 hidden md:block">
-            <img className="absolute w-[345px] h-16 top-[65px] left-[250px] object-cover transition-all duration-300 transform hover:scale-105" alt="Button" src={aiImage1} />
-            <img className="absolute w-[300px] h-auto top-0 left-0 object-cover transition-all duration-300 transform hover:scale-105" alt="Iphone" src={aiImage2} />
           </div>
         </div>
       </div>
 
-      <div className="lg:w-[1024px] lg:h-[790px] md:w-[768px] md:w-[768px] lg:pt-12 md:pt-2">
-        <div className="relative top-[141px] lg:left-[200px] md:left-0">
-          <div className="inline-flex flex-col items-start gap-[13px] absolute top-[345px] left-[111px]">
-            <div className="lg:relative md:absolute w-[294.63px] mt-[-0.53px] font-semibold text-[26px] md:items-start md:left-0">
-              Manage Expenses
+      <div className="container mx-auto px-4 lg:pt-12 md:pt-2">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center lg:space-x-8 mt-12 lg:mt-0">
+          <div className="flex flex-col w-full lg:w-1/2 mb-8 lg:mb-0">
+            <div className="mb-4">
+              <h3 className="text-2xl lg:text-3xl font-semibold text-right">AI-powered Shopping Lists</h3>
+              <p className="text-lg lg:text-xl text-right">
+                Ask AI to automatically generate shopping lists for your favorite recipes or events. Get everything you need in a matter of seconds!
+              </p>
             </div>
-            <p className="lg:relative md:absolute w-[415.98px] text-[18px] md:items-start md:left-0">
-              Get an overview of all of your household-related expenses. Start dividing expenses effortlessly!
-            </p>
+            <div className="flex flex-wrap justify-center lg:justify-end space-x-4">
+              <img src={aiImage1} alt="AI 1" className="w-full max-w-xs lg:max-w-sm mb-4 transition-transform duration-300 transform hover:scale-105" />
+              <img src={aiImage2} alt="AI 2" className="w-full max-w-xs lg:max-w-sm mb-4 transition-transform duration-300 transform hover:scale-105" />
+            </div>
           </div>
-          <img className="absolute w-[320px] h-auto top-[87px] left-[200px] object-cover transition-all duration-300 transform hover:scale-105 hidden md:block" alt="Group" src={expensesImage1} />
-          <img className="absolute w-[300px] h-auto top-[62px] left-[701px] object-cover transition-all duration-300 transform hover:scale-105 hidden md:block" alt="Iphone" src={expensesImage2} />
         </div>
       </div>
 
-      <div className="lg:w-[1024px] lg:h-[790px] md:w-[768px] md:w-[768px] lg:pt-12 md:pt-2">
-        <div className="lg:relative md:absolute w-[795px] h-[444px] top-[86px] lg:left-[300px] md:left-0">
-          <div className="inline-flex flex-col items-end gap-[12.8px] absolute top-[312px] left-[341px]">
-            <div className="lg:relative md:absolute w-fit mt-[-0.53px] font-semibold text-[26px] text-right md:items-start md:left-0">
-              Sustainable Goals
+      <div className="container mx-auto px-4 lg:pt-12 md:pt-2">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center lg:space-x-8 mt-12 lg:mt-0">
+          <div className="flex flex-col w-full lg:w-1/2 mb-8 lg:mb-0">
+            <div className="mb-4">
+              <h3 className="text-2xl lg:text-3xl font-semibold">Manage Expenses</h3>
+              <p className="text-lg lg:text-xl">
+                Get an overview of all of your household-related expenses. Start dividing expenses effortlessly!
+              </p>
             </div>
-            <p className="lg:relative md:absolute w-[454.38px] font-normal text-[18px] text-right md:items-start md:left-0" >
-              Initiate a sustainable goal and have every household member contribute to a greener environment.
-            </p>
-          </div>
-          <div className="absolute w-[494px] h-[444px] top-0 left-0 hidden md:block">
-            <img className="absolute w-[381px] h-auto top-[53px] left-[295px] object-cover transition-all duration-300 transform hover:scale-105" alt="Group" src={sustainableImage1} />
-            <img className="absolute w-[300px] h-auto top-0 left-0 object-cover transition-all duration-300 transform hover:scale-105" alt="Iphone" src={sustainableImage2} />
+            <div className="flex flex-wrap justify-center lg:justify-start space-x-4">
+              <img src={expensesImage1} alt="Expenses 1" className="w-full max-w-xs lg:max-w-sm mb-4 transition-transform duration-300 transform hover:scale-105" />
+              <img src={expensesImage2} alt="Expenses 2" className="w-full max-w-xs lg:max-w-sm mb-4 transition-transform duration-300 transform hover:scale-105" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <div className="container mx-auto px-4 lg:pt-12 md:pt-2">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center lg:space-x-8 mt-12 lg:mt-0">
+          <div className="flex flex-col w-full lg:w-1/2 mb-8 lg:mb-0">
+            <div className="mb-4">
+              <h3 className="text-2xl lg:text-3xl font-semibold text-right">Sustainable Goals</h3>
+              <p className="text-lg lg:text-xl text-right">
+                Initiate a sustainable goal and have every household member contribute to a greener environment.
+              </p>
+            </div>
+            <div className="flex flex-wrap justify-center lg:justify-end space-x-4">
+              <img src={sustainableImage1} alt="Sustainable 1" className="w-full max-w-xs lg:max-w-sm mb-4 transition-transform duration-300 transform hover:scale-105" />
+              <img src={sustainableImage2} alt="Sustainable 2" className="w-full max-w-xs lg:max-w-sm mb-4 transition-transform duration-300 transform hover:scale-105" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 

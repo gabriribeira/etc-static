@@ -27,7 +27,7 @@ function AboutSection() {
   };
 
   return (
-    <section className="bg-black text-white pb-32">
+    <section className="bg-black text-white pb-32" id="about">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-32">
           <p className='relative text-[3rem] lg:text-[8rem] font-bold text-white pt-2'>about.

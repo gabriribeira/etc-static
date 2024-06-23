@@ -10,67 +10,60 @@ function Footer() {
   };
 
   return (
-    <div className="bg-black pb-6 sm:py-12"> 
-      <div className="max-w-screen-xl mx-auto px-4 py-8 md:flex md:items-center md:justify-between">
-        
-        <div className="md:w-1/3 text-white md:text-left text-center mb-12 md:mb-0">
-          <p className="mb-2 mb-6 font-bold">drop a follow!</p>
-          <div className="mb-4">
-            <a
-              href="https://www.instagram.com/app.etc"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-link flex items-center mb-6 transition duration-300 ease-in-out hover:text-salmon hover:underline"
-            >
-              <img src={Instagram} alt="Instagram" className="w-8 h-8 mr-2" />
-              <span className="text-white font-medium">@app.etc</span>
-            </a>
-            <a
-              href="https://www.facebook.com/app.et.cetera"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-link flex items-center mb-6 transition duration-300 ease-in-out hover:text-salmon hover:underline"
-            >
-              <img src={Facebook} alt="Facebook" className="w-8 h-8 mr-2" />
-              <span className="text-white font-medium">/app.et.cetera</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/et-cetera-app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-link flex items-center transition duration-300 ease-in-out hover:text-salmon hover:underline"
-            >
-              <img src={LinkedIn} alt="LinkedIn" className="w-8 h-8 mr-2" />
-              <span className="text-white font-medium">company/et-cetera-app/</span>
-            </a>
-          </div>
-        </div>
-        
-        <div className="md:w-1/3 text-center mb-4">
-          <div className="flex items-center justify-center">
-            <img src={Deca} alt="Deca" className="mx-auto md:pb-12" style={{ maxWidth: '100%', height: 'auto' }} />
-          </div>
-        </div>
-        
-        <div className="md:w-1/3 text-white text-center md:text-right">
-          <div className="mb-4">
-            <p className="mb-2 font-bold">email us!</p>
-            <div className="relative inline-block">
-              <p
-                className="text-white font-medium cursor-pointer transition duration-300 ease-in-out hover:text-salmon hover:underline"
-                onClick={handleEmailClick}
+    <section id="contact" className="bg-black text-white">
+      <div className="container mx-auto px-4 py-12">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+          
+          <div className="md:w-1/3 text-center md:text-left mb-8 md:mb-0">
+            <p className="mb-6 font-bold">drop a follow!</p>
+            <div className="space-y-4">
+              <a
+                href="https://www.instagram.com/app.etc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center transition duration-300 ease-in-out hover:text-salmon hover:underline"
               >
-                geral@etc-app.com
-              </p>
-              <span
-                className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-transform duration-300 ease-out transform scale-x-0 origin-bottom-right"
-              ></span>
+                <img src={Instagram} alt="Instagram" className="w-8 h-8 mr-2" />
+                <span className="font-medium">@app.etc</span>
+              </a>
+              <a
+                href="https://www.facebook.com/app.et.cetera"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center transition duration-300 ease-in-out hover:text-salmon hover:underline"
+              >
+                <img src={Facebook} alt="Facebook" className="w-8 h-8 mr-2" />
+                <span className="font-medium">/app.et.cetera</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/et-cetera-app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center transition duration-300 ease-in-out hover:text-salmon hover:underline"
+              >
+                <img src={LinkedIn} alt="LinkedIn" className="w-8 h-8 mr-2" />
+                <span className="font-medium">company/et-cetera-app/</span>
+              </a>
             </div>
           </div>
+          
+          <div className="md:w-1/3 text-center mb-8 md:mb-0">
+            <img src={Deca} alt="Deca" className="mx-auto" style={{ maxWidth: '100%', height: 'auto' }} />
+          </div>
+          
+          <div className="md:w-1/3 text-center md:text-right">
+            <p className="mb-6 font-bold">email us!</p>
+            <p
+              className="font-medium cursor-pointer transition duration-300 ease-in-out hover:text-salmon hover:underline"
+              onClick={handleEmailClick}
+            >
+              geral@etc-app.com
+            </p>
+          </div>
+          
         </div>
-        
       </div>
-    </div>
+    </section>
   );
 }
 
