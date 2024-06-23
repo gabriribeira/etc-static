@@ -240,3 +240,29 @@ body {
   font-size: 50px;
   font-weight: 1000;
 }
+
+/* Header.css */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0; /* Posicionar à direita */
+  width: 200px;
+  height: 100vh;
+  background-color: black;
+  transform: translateX(100%); /* Inicialmente fora da tela */
+  transition: transform 0.3s ease; /* Transição suave ao abrir e fechar */
+  z-index: 1000;
+  padding: 20px;
+}
+
+.mobile-menu.open {
+  transform: translateX(0); /* Slide in ao abrir */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+}
