@@ -57,7 +57,7 @@ function Header() {
         <p className="text-md md:text-lg mb-8 px-4">that revolutionizes shared-home living</p>
         <div className="relative flex justify-center">
           <img src={phoneImage} alt="Phone" className="h-auto z-10 lg:w-[800px] lg:h-auto" />
-          <img src={backgroundImage} alt="Background" className="absolute inset-0 w-full h-full z-0 object-contain mt-[200px] md:mt-[200px] lg:mt-[300px] lg:ml-4" />
+          <img src={backgroundImage} alt="Background" className="absolute inset-0 w-full h-full z-0 object-contain mt-[200px] md:mt-[250px] lg:mt-[300px] lg:mw-[1220px] lg:h-auto" />
         </div>
       </div>
       <div className="bg-white py-20 md:py-44">
